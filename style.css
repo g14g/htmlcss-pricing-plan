@@ -1,0 +1,232 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+/**/
+
+p {
+    font-size: 18px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Inter";
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+header .header-container h1 {
+    font-family: "Poppins";
+    font-size: 64px;
+}
+
+header .header-container p {
+    color: #888888;
+    margin-top: 0.75rem;
+}
+
+header .switch-container {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+header .switch-container p {
+    color: #888888;
+}
+
+header .switch-container .switch {
+    display: flex;
+    align-items: center;
+}
+
+header .switch-container .switch:last-of-type {
+    margin-left: 1rem;
+}
+
+header .switch-container .switch .switch-toggle {
+    width: 42px;
+    height: 26px;
+    border-radius: 13px;
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+header .switch-container .switch.monthly .switch-toggle {
+    background-color: #000000;
+    border: 3px solid #000000;
+    justify-content: flex-end;
+}
+
+header .switch-container .switch.yearly .switch-toggle {
+    background-color: #ffffff;
+    border: 3px solid #888888;
+    justify-content: flex-start;
+}
+
+header .switch-container .switch .switch-toggle .switch-circle {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+header .switch-container .switch.monthly .switch-toggle .switch-circle {
+    border: 3px solid #000000;
+    margin-right: -3px;
+}
+
+header .switch-container .switch.yearly .switch-toggle .switch-circle {
+    border: 3px solid #888888;
+    margin-left: -3px;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 6rem;
+}
+
+main .plan {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(100% / 3 - 6rem / 3);
+    flex-grow: 1;
+    gap: 3rem;
+    min-width: 385px;
+    padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+main .plan .plan-header h2 {
+    font-family: "Poppins";
+    font-size: 48px;
+}
+
+main .plan .plan-header p {
+    color: #888888;
+}
+
+main .plan .plan-price p {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 76px;
+    text-align: center;
+}
+
+main .plan .plan-price span.dollar {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0.5rem 0 0;
+}
+
+main .plan .plan-price span {
+    font-size: 32px;
+    font-family: "Inter";
+    font-weight: 400;
+    color: #888888;
+    margin: 0 0 0 0.5rem;
+}
+
+main .plan .plan-discount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+main .plan .plan-discount span {
+    font-size: 24px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    color: #000000;
+    background-color: #e3e3e3;
+}
+
+main .plan .plan-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #6500ff;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+main .plan ul.plan-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+main .plan ul.plan-list p {
+    font-size: 24px;
+}
+
+main .plan .plan-list li {
+    display: flex;
+    align-items: center;
+}
+
+main .plan .plan-list li i {
+    font-size: 42px;
+    margin-right: 1rem;
+}
+
+main .plan.plan-professional,
+main .plan.plan-professional .plan-header h2,
+main .plan.plan-professional .plan-header p,
+main .plan.plan-professional .plan-price p,
+main .plan.plan-professional .plan-price span,
+main .plan.plan-professional .plan-discount,
+main .plan.plan-professional .plan-list,
+main .plan.plan-professional .plan-list p,
+main .plan.plan-professional .plan-list li,
+main .plan.plan-professional .plan-list li i {
+    background-color: #6500ff;
+    color: #ffffff;
+}
+
+main .plan.plan-professional .plan-button {
+    background-color: #ffffff;
+    color: #6500ff;
+}
+
+/* main .plan:last-of-type ul.plan-list {
+    max-height: 260px;
+    flex-wrap: wrap;
+} */
