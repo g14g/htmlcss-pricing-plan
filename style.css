@@ -61,6 +61,11 @@ header .switch-container .switch {
     align-items: center;
 }
 
+header .switch-container .switch i {
+    font-size: 42px;
+    margin-left: 1rem;
+}
+
 header .switch-container .switch:last-of-type {
     margin-left: 1rem;
 }
@@ -116,9 +121,9 @@ main .plan {
     display: flex;
     flex-direction: column;
     flex-basis: calc(100% / 3 - 6rem / 3);
+    min-width: 400px;
     flex-grow: 1;
     gap: 3rem;
-    min-width: 385px;
     padding: 3rem;
     border-radius: 2rem;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
@@ -175,6 +180,7 @@ main .plan .plan-button {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     height: 5rem;
     font-size: 24px;
     font-weight: 700;
@@ -186,42 +192,48 @@ main .plan .plan-button {
 
 main .plan ul.plan-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 2rem;
     list-style: none;
-    max-width: 350px;
     margin: 0 auto;
 }
 
-main .plan ul.plan-list p {
-    font-size: 24px;
-}
-
-main .plan .plan-list li {
+/* Ho chiesto a Gemini come fare a spezzare in 2 l'ultima card in modalità tablet, ma non ho capito lo stesso... */
+/* https://gemini.google.com/app/2e0eaa9e831f0b74 */
+main .plan ul.plan-list li {
     display: flex;
     align-items: center;
+    flex-grow: 1;
+    flex-basis: calc(48%);
+    min-width: 300px;
+    /* text-wrap: nowrap; */
 }
 
-main .plan .plan-list li i {
+main .plan ul.plan-list li i {
     font-size: 42px;
     margin-right: 1rem;
 }
 
-main .plan.plan-professional,
-main .plan.plan-professional .plan-header h2,
-main .plan.plan-professional .plan-header p,
-main .plan.plan-professional .plan-price p,
-main .plan.plan-professional .plan-price span,
-main .plan.plan-professional .plan-discount,
-main .plan.plan-professional .plan-list,
-main .plan.plan-professional .plan-list p,
-main .plan.plan-professional .plan-list li,
-main .plan.plan-professional .plan-list li i {
+main .plan ul.plan-list li p {
+    font-size: 24px;
+}
+
+main .plan.plan-highlight,
+main .plan.plan-highlight .plan-header h2,
+main .plan.plan-highlight .plan-header p,
+main .plan.plan-highlight .plan-price p,
+main .plan.plan-highlight .plan-price span,
+main .plan.plan-highlight .plan-discount,
+main .plan.plan-highlight .plan-list,
+main .plan.plan-highlight .plan-list p,
+main .plan.plan-highlight .plan-list li,
+main .plan.plan-highlight .plan-list li i {
     background-color: #6500ff;
     color: #ffffff;
 }
 
-main .plan.plan-professional .plan-button {
+main .plan.plan-highlight .plan-button {
     background-color: #ffffff;
     color: #6500ff;
 }
