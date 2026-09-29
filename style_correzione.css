@@ -1,0 +1,191 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+/**/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Inter";
+}
+
+/* CONTAINER */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+header .header-container h1 {
+    font-family: "Poppins";
+    font-size: 48px;
+}
+
+header .header-container p {
+    color: #888888;
+    margin-top: 0.75rem;
+}
+
+header .switch-container {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+header .switch-container p {
+    color: #888888;
+}
+
+header .switch-container .switch {
+    display: flex;
+    align-items: center;
+}
+
+header .switch-container .switch i {
+    font-size: 42px;
+    margin-left: 1rem;
+}
+
+/* MAIN */
+
+main .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+main .plan {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(100% / 3 - 8rem / 3);
+    min-width: 350px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+main .plan .plan-header h2 {
+    font-family: "Poppins";
+    font-size: 32px;
+}
+
+main .plan .plan-header p {
+    color: #888888;
+}
+
+main .plan .plan-price p {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+}
+
+main .plan .plan-price span.dollar {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0.5rem 0 0;
+}
+
+main .plan .plan-price span {
+    font-size: 24px;
+    font-family: "Inter";
+    font-weight: 400;
+    color: #888888;
+    margin: 0 0 0 0.5rem;
+}
+
+main .plan .plan-discount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .plan .plan-discount span {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    color: #000000;
+    background-color: #e3e3e3;
+}
+
+main .plan .plan-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    height: 5rem;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #6500ff;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+main .plan ul.plan-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    justify-content: space-around;
+}
+
+main .plan ul.plan-list li {
+    display: flex;
+    align-items: center;
+    flex-basis: 300px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+main .plan ul.plan-list li i {
+    font-size: 36px;
+    margin-right: 1rem;
+}
+
+main .plan.plan-highlight,
+main .plan.plan-highlight .plan-header h2,
+main .plan.plan-highlight .plan-header p,
+main .plan.plan-highlight .plan-price p,
+main .plan.plan-highlight .plan-price span,
+main .plan.plan-highlight .plan-discount {
+    background-color: #6500ff;
+    color: #ffffff;
+}
+
+main .plan.plan-highlight .plan-list,
+main .plan.plan-highlight .plan-list p,
+main .plan.plan-highlight .plan-list li,
+main .plan.plan-highlight .plan-list li i {
+    color: #ffffff;
+}
+
+main .plan.plan-highlight .plan-button {
+    background-color: #ffffff;
+    color: #6500ff;
+}
